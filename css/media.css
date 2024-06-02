@@ -1,0 +1,469 @@
+@media screen and (min-width: 320px) {
+    .hero-buttons {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+
+@media screen and (min-width: 375px){
+    .container{
+        max-width: 365px;
+    }
+
+    .hero-buttons {
+        gap: 0;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .container {
+            max-width: 734px;
+        }
+    
+    .made > .container{
+        max-width: 644px;
+    }
+
+    .header {
+        padding: 24px 32px;
+    }
+
+    .header-container{
+        gap: 48px;
+    }
+
+    .header-menu {
+        display: flex;
+        gap: 24px;
+    }
+
+    .header-socials {
+        display: flex;
+        gap: 18px;
+    }
+
+    .header-socials-link {
+        display: block;
+    }
+
+    .header-socials-item {
+        height: 24px;
+    }
+
+    .header-socials-icon {
+        transition: fill 300ms ease;
+    }
+
+    .current {
+        position: relative;
+    }
+
+    .current::after {
+        content: '';
+        position: absolute;
+        bottom: -22px;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: var(--accent-color);
+    }
+
+    .header-socials-link:is(:hover, :focus) .header-socials-icon {
+        fill: var(--accent-color);
+    }
+
+    .header-menu-link {
+        color: var(--main-text-color);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: -0.02em;
+        transition: color 300ms ease;
+    }
+
+    .header-menu-link:hover,
+    .header-menu-link:focus {
+        color: var(--accent-color);
+    }
+
+    .menu-open-btn{
+        display: none;
+    }
+
+
+
+    .hero {
+        padding-bottom: 40px;
+    }
+
+    .hero-container {
+        padding: 671px 40px 40px 40px;
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.0), rgba(17, 17, 17, 0.40)), url(../images/chocolate_main-tab.jpg);
+    }
+
+    @media(min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolutions: 2dppx) {
+        .hero-container {
+            background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.0), rgba(17, 17, 17, 0.40)), url(../images/chocolate_main-tab-2x.jpg);
+        }
+    }
+
+    .hero-title {
+        font-size: 28px;
+        max-width: 484px;
+    }
+
+    .hero-btn {
+        padding: 14px 40px;
+    }
+
+    .hero-link {
+        padding: 14px 40px;
+    }
+
+    .hero-down {
+        margin-left: auto;
+    }
+
+    .section-title {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1.17;
+
+    }
+
+    .advantages {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+    .advantages-list{
+        gap: 32px;
+    }
+    .advantages-item{
+        width: calc((100% - 32px) / 2);
+    }
+
+    .taste {
+        padding-top: 80px;
+    }
+
+    .taste-title{
+    margin-bottom: 28px;
+    }
+
+    .taste-list{
+        gap: 32px;
+    }
+
+    .taste-item {
+        width: calc((100% - 32px) / 2);
+    }
+
+    .made {
+        padding-top: 80px;
+    }
+
+    .made-title {
+        margin-bottom: 50px;
+    }
+
+    .made-content {
+        padding: 32px;
+        max-width: 100%;
+    }
+
+    .made-head{
+        margin-bottom: 28px;
+    }
+
+    .made-list {
+        max-width: 464px;
+    }
+
+
+    .loved {
+        padding: 80px 0;
+    }
+
+    .loved-title{
+        margin-bottom: 91px;
+    }
+
+    .loved-list{
+        column-gap: 16px;
+        margin-bottom: 94px;
+    }
+
+    .loved-item {
+        width: calc((100% - 16px) / 2);
+    
+    }
+
+
+
+    .footer {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .footer-top {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 54px;
+    }
+
+    .footer-main-text {
+        color: var(--secondary-text-color);
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 1.21;
+        letter-spacing: -0.02em;
+        max-width: 300px;
+        margin: 0;
+    }
+
+    .footer-bottom {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .footer-navigation {
+        margin-bottom: 0;
+    }
+
+    .footer-menu {
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    .footer-input {
+        max-width: 233px;
+        margin-right: 7px;
+    }
+
+    .footer-form-btn {
+        max-width: 128px;
+        padding: 14px 28px;
+    }
+
+
+
+
+    .backdrop {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modal {
+        margin: auto;
+        padding: 40px;
+    }
+
+    .backdrop.is-hidden .modal {
+        transform: translate(-50%, -50%) scaleX(5);
+    }
+
+
+    .modal-close-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobile-title{
+        font-size: 24px;
+        max-width: 298px;
+    }
+
+    .send-btn{
+        margin-top: 18px;
+    }
+
+    .check-text{
+        margin-bottom: 0;
+    }
+
+}
+
+
+
+
+@media screen and (min-width: 1166px) {
+    .container, .made>.container {
+        max-width: 1166px;
+    }
+
+
+
+    .header {
+        padding-top: 24px;
+        padding-bottom: 32px;
+    }
+
+    .header-logo {
+        color: var(--main-text-color);
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.11;
+        letter-spacing: -0.03em;
+        display: flex;
+        align-items: center;
+    }
+
+    .current::after {
+        bottom: -32px;
+    }
+
+
+    .hero {
+        padding-bottom: 72px;
+    }
+
+    .hero-container {
+        padding: 381px 40px 40px 40px;
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.0), rgba(17, 17, 17, 0.40)), url(../images/chocolate_main.jpg);
+    }
+
+    @media(min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolutions: 2dppx) {
+        .hero-container {
+            background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.0), rgba(17, 17, 17, 0.40)), url(../images/chocolate_main-2x.jpg);
+        }
+    }
+
+    .advantages {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .advantages-list {
+        padding-left: 18px;
+        padding-right: 18px;
+        gap: 88px;
+    }
+
+    .advantages-item {
+        width: calc((100% - 88px * 2) / 3); 
+    }
+
+    .advantages-item:last-child::after{
+    display: none;
+}
+
+    .advantages-item:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        right: -44px;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 124px;
+        width: 1px;
+        background-color: rgba(255, 255, 255, 0.50);
+    }
+
+    .advantages-block {
+        margin-bottom: 19px;
+    }
+
+    .taste {
+        padding-top: 100px;
+    }
+
+    .taste-list {
+        gap: 19px;
+    }
+
+    .taste-item {
+        width: calc((100% - 57px) / 4);
+    }
+
+
+    .made {
+        padding-top: 100px;
+    }
+
+    .made-title {
+        padding-bottom: 50px;
+    }
+
+    .made-wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .made-image{
+        max-width: 600px;
+        margin-bottom: 0;
+    }
+
+    .made-item:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+    .made-content {
+        max-width: 516px;
+    }
+
+    .made-list {
+        max-width: 425px;
+    }
+
+    .loved {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .loved-title {
+        margin-bottom: 91px; 
+
+    }
+
+    .loved-list {
+        column-gap: 28px;
+        margin-bottom: 49px;
+    }
+
+    .loved-item {
+        width: calc((100% - 56px) / 3);
+    }
+
+
+
+    .footer-top {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 50px;
+        margin-bottom: 24px;
+    }
+
+    .footer-main-text {
+        font-size: 28px;
+        line-height: 1.21;
+    }
+
+    .footer-menu {
+        gap: 24px;
+    }
+
+    .footer-input-wrap {
+        row-gap: 8px;
+    }
+
+    .footer-input {
+        max-width: 313px;
+        height: 52px;
+    }
+
+    .footer-form-btn {
+        max-width: 137px;
+        padding: 17px 32px;
+    }
+
+}
